@@ -1,0 +1,380 @@
+[
+  {
+    "id": 1,
+    "testName": "type:Personal, visibility:Private, goalStatus: in progress",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Private",
+    "shareWithUserNames": [],
+    "goalStatus": "In progress",
+    "whoDeletesGoal": "employeeB.delete.goals@uitests.com",
+    "expect": "can"
+  },
+  {
+    "id": 2,
+    "testName": "type:Personal, visibility:Private, goalStatus: in progress",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Private",
+    "shareWithUserNames": [],
+    "goalStatus": "In progress",
+    "whoDeletesGoal": "manager.delete.goals@uitests.com",
+    "expect": "no"
+  },
+  {
+    "id": 3,
+    "testName": "type:Personal, visibility:Private, goalStatus: in progress",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Private",
+    "shareWithUserNames": [],
+    "goalStatus": "In progress",
+    "whoDeletesGoal": "hr.delete.goals@uitests.com",
+    "expect": "no"
+  },
+  {
+    "id": 4,
+    "testName": "type:Personal, visibility:Private, goalStatus: Done",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Private",
+    "shareWithUserNames": [],
+    "goalStatus": "Done",
+    "whoDeletesGoal": "employeeB.delete.goals@uitests.com",
+    "expect": "can"
+  },
+  {
+    "id": 5,
+    "testName": "type:Personal, visibility:Private, goalStatus: Done",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Private",
+    "shareWithUserNames": [],
+    "goalStatus": "Done",
+    "whoDeletesGoal": "manager.delete.goals@uitests.com",
+    "expect": "no"
+  },
+  {
+    "id": 6,
+    "testName": "type:Personal, visibility:Private, goalStatus: Done",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Private",
+    "shareWithUserNames": [],
+    "goalStatus": "Done",
+    "whoDeletesGoal": "hr.delete.goals@uitests.com",
+    "expect": "no"
+  },
+  {
+    "id": 7,
+    "testName": "type:Personal, visibility:Private, goalStatus: Deleted",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Private",
+    "shareWithUserNames": [],
+    "goalStatus": "Deleted",
+    "whoDeletesGoal": "employeeB.delete.goals@uitests.com",
+    "expect": "cannot"
+  },
+  {
+    "id": 8,
+    "testName": "type:Personal, visibility:Private, goalStatus: Deleted",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Private",
+    "shareWithUserNames": [],
+    "goalStatus": "Deleted",
+    "whoDeletesGoal": "manager.delete.goals@uitests.com",
+    "expect": "no"
+  },
+  {
+    "id": 9,
+    "testName": "type:Personal, visibility:Private, goalStatus: Deleted",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Private",
+    "shareWithUserNames": [],
+    "goalStatus": "Deleted",
+    "whoDeletesGoal": "hr.delete.goals@uitests.com",
+    "expect": "no"
+  },
+  {
+    "id": 10,
+    "testName": "type:Personal, visibility:Shared, goalStatus: in progress",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Shared",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "In progress",
+    "whoDeletesGoal": "employeeB.delete.goals@uitests.com",
+    "expect": "can"
+  },
+  {
+    "id": 11,
+    "testName": "type:Personal, visibility:Shared, goalStatus: in progress",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Shared",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "In progress",
+    "whoDeletesGoal": "manager.delete.goals@uitests.com",
+    "expect": "cannot"
+  },
+  {
+    "id": 12,
+    "testName": "type:Personal, visibility:Shared, goalStatus: in progress",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Shared",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "In progress",
+    "whoDeletesGoal": "hr.delete.goals@uitests.com",
+    "expect": "cannot"
+  },
+  {
+    "id": 13,
+    "testName": "type:Personal, visibility:Shared, goalStatus: Done",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Shared",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "Done",
+    "whoDeletesGoal": "employeeB.delete.goals@uitests.com",
+    "expect": "can"
+  },
+  {
+    "id": 14,
+    "testName": "type:Personal, visibility:Shared, goalStatus: Done",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Shared",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "Done",
+    "whoDeletesGoal": "manager.delete.goals@uitests.com",
+    "expect": "cannot"
+  },
+  {
+    "id": 15,
+    "testName": "type:Personal, visibility:Shared, goalStatus: Done",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Shared",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "Done",
+    "whoDeletesGoal": "hr.delete.goals@uitests.com",
+    "expect": "cannot"
+  },
+  {
+    "id": 16,
+    "testName": "type:Personal, visibility:Shared, goalStatus: Deleted",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Shared",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "Deleted",
+    "whoDeletesGoal": "employeeB.delete.goals@uitests.com",
+    "expect": "cannot"
+  },
+  {
+    "id": 17,
+    "testName": "type:Personal, visibility:Shared, goalStatus: Deleted",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Shared",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "Deleted",
+    "whoDeletesGoal": "manager.delete.goals@uitests.com",
+    "expect": "cannot"
+  },
+  {
+    "id": 18,
+    "testName": "type:Personal, visibility:Shared, goalStatus: Deleted",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Public",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "Deleted",
+    "whoDeletesGoal": "hr.delete.goals@uitests.com",
+    "expect": "cannot"
+  },
+  {
+    "id": 19,
+    "testName": "type:Personal, visibility:Shared, goalStatus: in progress",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Public",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "In progress",
+    "whoDeletesGoal": "employeeB.delete.goals@uitests.com",
+    "expect": "can"
+  },
+  {
+    "id": 20,
+    "testName": "type:Personal, visibility:Shared, goalStatus: in progress",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Public",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "In progress",
+    "whoDeletesGoal": "manager.delete.goals@uitests.com",
+    "expect": "cannot"
+  },
+  {
+    "id": 21,
+    "testName": "type:Personal, visibility:Shared, goalStatus: in progress",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Public",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "In progress",
+    "whoDeletesGoal": "hr.delete.goals@uitests.com",
+    "expect": "cannot"
+  },
+  {
+    "id": 22,
+    "testName": "type:Personal, visibility:Shared, goalStatus: Done",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Public",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "Done",
+    "whoDeletesGoal": "employeeB.delete.goals@uitests.com",
+    "expect": "can"
+  },
+  {
+    "id": 23,
+    "testName": "type:Personal, visibility:Shared, goalStatus: Done",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Public",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "Done",
+    "whoDeletesGoal": "manager.delete.goals@uitests.com",
+    "expect": "cannot"
+  },
+  {
+    "id": 24,
+    "testName": "type:Personal, visibility:Shared, goalStatus: Done",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Public",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "Done",
+    "whoDeletesGoal": "hr.delete.goals@uitests.com",
+    "expect": "cannot"
+  },
+  {
+    "id": 25,
+    "testName": "type:Personal, visibility:Shared, goalStatus: Deleted",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Public",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "Deleted",
+    "whoDeletesGoal": "employeeB.delete.goals@uitests.com",
+    "expect": "cannot"
+  },
+  {
+    "id": 26,
+    "testName": "type:Personal, visibility:Shared, goalStatus: Deleted",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Public",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "Deleted",
+    "whoDeletesGoal": "manager.delete.goals@uitests.com",
+    "expect": "cannot"
+  },
+  {
+    "id": 27,
+    "testName": "type:Personal, visibility:Shared, goalStatus: Deleted",
+    "initiator": "employeeA.delete.goals@uitests.com",
+    "goalOwner": "employeeB.delete.goals@uitests.com",
+    "goalType": "Personal",
+    "visibility": "Public",
+    "shareWithUserNames": [
+      "manager.delete.goals@uitests.com",
+      "hr.delete.goals@uitests.com"
+    ],
+    "goalStatus": "Deleted",
+    "whoDeletesGoal": "hr.delete.goals@uitests.com",
+    "expect": "cannot"
+  }
+]
