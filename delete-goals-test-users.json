@@ -1,0 +1,7 @@
+{
+  "admin": "admin.delete.goals@uitests.com",
+  "employeeA": "employeeA.delete.goals@uitests.com",
+  "employeeB": "employeeB.delete.goals@uitests.com",
+  "manager": "manager.delete.goals@uitests.com",
+  "hr": "hr.delete.goals@uitests.com"
+}
